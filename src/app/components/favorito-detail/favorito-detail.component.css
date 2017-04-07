@@ -1,0 +1,13 @@
+
+.btn-link{
+  background-color: #1FAD9F;
+  text-decoration: none;
+  color: #F6F6F6;
+  border-radius: 5px;
+  width: auto;
+  margin-left: 0px;
+  border: 1px #2980B9 solid;
+  padding: 1px;
+  display: inline-block;
+  margin-left: 5px;
+}

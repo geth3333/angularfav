@@ -1,3 +1,16 @@
-<h1>
-  {{title}}
-</h1>
+<header>
+  <img src="https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678111-map-marker-128.png" alt="">
+  <h1>
+    {{title}}
+  </h1>
+
+</header>
+
+<div class="separator"></div>
+
+<div class="desplegado">
+  <div class="addMarcador">
+    <a [routerLink]="'/addmarcador'"><p>Agregar marcador</p></a>
+  </div>
+  <router-outlet></router-outlet>
+</div>

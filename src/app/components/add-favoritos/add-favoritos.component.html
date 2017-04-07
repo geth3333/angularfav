@@ -1,0 +1,17 @@
+
+<form #formFavorito="ngForm" (ngSubmit)="onSubmit()">
+
+  <label>Titulo</label>
+  <p><input type="text" name="title" [(ngModel)]="favorito.title" validate></p>
+
+  <label>Descripcion</label>
+  <p><input type="text" name="description" [(ngModel)]="favorito.descripcion" validate></p>
+
+  <label>URL</label>
+  <p><input type="url" name="url" [(ngModel)]="favorito.url" validate></p>
+
+  <input type="submit" name="sub" value="Enviar">
+
+</form>
+
+<a [routerLink]="'/'" class="btn-link" >Volver</a>

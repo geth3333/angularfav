@@ -1,0 +1,16 @@
+
+<ul class="lista">
+    <li *ngFor="let favorito of favoritos" class="favorito-item">
+
+        <h4>{{ favorito.title }}</h4>
+        <h4 *ngIf=" !favorito.title " id="no-content">Empty</h4>
+        <p>{{ favorito.descripcion }}</p>
+        <p *ngIf=" !favorito.descripcion" id="no-content">Sin descripción</p>
+
+        <a href="{{ favorito.url }}" class="btn-link" target="_blank">Ir</a>
+        <a [routerLink]="['/marcador' , favorito._id]" class="btn-link" >Ver más</a>
+        <a (click)="delFav(favorito._id)" class="btn-link point" id="eliminar" >Borrar</a>
+
+      </li>
+
+  </ul>

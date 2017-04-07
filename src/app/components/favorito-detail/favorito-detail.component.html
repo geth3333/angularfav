@@ -1,0 +1,12 @@
+
+<div class="marcador" *ngIf="favorito">
+  <h4>{{ favorito.title }}</h4>
+  <p>{{ favorito.descripcion }}</p>
+  <p>{{ favorito.url }}</p>
+  <p>{{ favorito._id }}</p>
+  <a [routerLink]="['/editar' , favorito._id]" class="btn-link" >Editar</a>
+  <a [routerLink]="['/delmarcador' , favorito._id]" class="btn-link" >Eliminar</a>
+
+</div>
+
+  <a [routerLink]="'/'" class="btn-link" >Volver</a>
